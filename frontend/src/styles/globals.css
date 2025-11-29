@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+:root{
+  --brand-1: #317D5B;
+  --brand-2: #7C9806;
+  --panel: rgba(255,255,255,0.9);
+}
+
+html,body{
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;padding:0;color:#0f172a;background-color:transparent;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+
+input,button{font-family:inherit}
+
+.container-glass{backdrop-filter: blur(6px); background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.6)); border-radius: 14px;}
+
+@media (max-width:640px){
+  .sm-hide{display:none}
+}
+
+.no-scrollbar{ -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar{ display:none; }
+.carousel-focus:focus{ outline: 3px solid rgba(99,102,241,0.15); outline-offset: 3px; }
